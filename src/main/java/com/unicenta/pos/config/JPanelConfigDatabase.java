@@ -61,7 +61,7 @@ public class JPanelConfigDatabase extends javax.swing.JPanel implements PanelCon
         jcboDBDriver.addItem("Apache Derby");
         jcboDBDriver.addItem("MariaDB");
         jcboDBDriver.addItem("MySQL");
-        jcboDBDriver.setSelectedIndex(0);
+        jcboDBDriver.setSelectedIndex(1);
         multiDBButton.addActionListener(dirty);
 
 // primary DB        
@@ -924,11 +924,11 @@ public class JPanelConfigDatabase extends javax.swing.JPanel implements PanelCon
         if ("Apache Derby".equals(jcboDBDriver.getSelectedItem())) {
             dbDriverLibraryValue.setText(new File(new File(dirname), "derby-10.14.2.0.jar").getAbsolutePath());
             dbDriverClassValue.setText("org.apache.derby.jdbc.EmbeddedDriver");
-            dbURLValue.setText("jdbc:derby:" + System.getProperty("user.home")+"/.unicenta/");
-            jtxtDbSchema.setText("unicentaopos-database;create=true");
+            dbURLValue.setText("jdbc:derby:" + System.getProperty("user.home")+"/.solipos/");
+            jtxtDbSchema.setText("solipos-database;create=true");
             dbUserValue.setText("");
             dbPasswordValue.setText("");
-            //jtxtDbSchema.setText("unicentaopos-derby");
+            //jtxtDbSchema.setText("solipos-derby");
             jtxtDbOptions.setText("");
             dbConfigPanel.setVisible(false);
             db2ConfigPanel.setVisible(false);
@@ -939,10 +939,10 @@ public class JPanelConfigDatabase extends javax.swing.JPanel implements PanelCon
         else if ("SQLite".equals(jcboDBDriver.getSelectedItem())) {
             dbDriverLibraryValue.setText(new File(new File(dirname), "sqlite-jdbc-3.7.2.jar").getAbsolutePath());
             dbDriverClassValue.setText("org.sqlite.JDBC");
-            dbURLValue.setText("jdbc:sqlite:" + System.getProperty("user.home")+"/.unicenta/");
+            dbURLValue.setText("jdbc:sqlite:" + System.getProperty("user.home")+"/.solipos/");
             dbUserValue.setText("");
             dbPasswordValue.setText("");
-            jtxtDbSchema.setText("unicentaopos");
+            jtxtDbSchema.setText("solipos");
             jtxtDbOptions.setText("");
             dbConfigPanel.setVisible(false);
             db2ConfigPanel.setVisible(false);
@@ -952,8 +952,10 @@ public class JPanelConfigDatabase extends javax.swing.JPanel implements PanelCon
             dbDriverLibraryValue.setText(new File(new File(dirname), "mariadb-java-client-2.7.0.jar").getAbsolutePath());
             dbDriverClassValue.setText("org.mariadb.jdbc.Driver");
             dbURLValue.setText("jdbc:mariadb://localhost:3306/");
-            jtxtDbSchema.setText("unicentaopos");
+            jtxtDbSchema.setText("solipos");
             jtxtDbOptions.setText("?zeroDateTimeBehavior=convertToNull");
+            dbUserValue.setText("root");
+            dbPasswordValue.setText("solipos");
             dbConfigPanel.setVisible(true);
             multiDBPanel.setVisible(true);
             dbMessageLabel.setText("This is the best option for multiple terminal configuration");
@@ -963,7 +965,7 @@ public class JPanelConfigDatabase extends javax.swing.JPanel implements PanelCon
             dbDriverLibraryValue.setText(new File(new File(dirname), "mysql-connector-java-5.1.39.jar").getAbsolutePath());
             dbDriverClassValue.setText("com.mysql.jdbc.Driver");
             dbURLValue.setText("jdbc:mysql://localhost:3306/");
-            jtxtDbSchema.setText("unicentaopos");
+            jtxtDbSchema.setText("solipos");
             jtxtDbOptions.setText("?zeroDateTimeBehavior=convertToNull");
             dbConfigPanel.setVisible(true);
             multiDBPanel.setVisible(true);
@@ -1115,7 +1117,7 @@ public class JPanelConfigDatabase extends javax.swing.JPanel implements PanelCon
 
         dbNameValue.setText("Main DB");
         dbURLValue.setText("jdbc:mysql://localhost:3306/");
-        jtxtDbSchema.setText("unicentaopos");
+        jtxtDbSchema.setText("solipos");
         jtxtDbOptions.setText("?zeroDateTimeBehavior=convertToNull");
         dbUserValue.setText(null);
         dbPasswordValue.setText(null);
@@ -1131,7 +1133,7 @@ public class JPanelConfigDatabase extends javax.swing.JPanel implements PanelCon
 
         db2NameValue.setText("Other DB");
         db2URLValue.setText("jdbc:mysql://localhost:3306/");
-        jtxtDbSchema1.setText("unicentaopos1");
+        jtxtDbSchema1.setText("solipos");
         db2OptionsValue.setText("?zeroDateTimeBehavior=convertToNull");
         db2UserValue.setText(null);
         db2PasswordValue.setText(null);
@@ -1182,13 +1184,13 @@ public class JPanelConfigDatabase extends javax.swing.JPanel implements PanelCon
             isValid = (connection == null) ? false : connection.isValid(1000);
 
             if (isValid) {
-                String SQL="CREATE DATABASE if not exists unicentaopos";
+                String SQL="CREATE DATABASE if not exists solipos";
                 Statement stmt = (Statement) connection.createStatement();
                 stmt.executeUpdate(SQL);
 
                 fillSchema();
                 validUserAlert.setVisible(false);
-                jtxtDbSchema.setText("unicentaopos");
+                jtxtDbSchema.setText("solipos");
 
                 JOptionPane.showMessageDialog(this,
                         AppLocal.getIntString("message.createdefaultdb"),

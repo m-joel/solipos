@@ -365,7 +365,7 @@ public class AppConfig implements AppProperties {
 
         properties.setProperty("tkt.header1", "SOLiPOS");
         properties.setProperty("tkt.header2", "Touch Friendly Point Of Sale");
-        properties.setProperty("tkt.header3", "Copyright (c) 2009-2018 uniCenta");
+        properties.setProperty("tkt.header3", "Copyright (c) 2009-2025 SOLiPOS");
         properties.setProperty("tkt.header4", "Change header text in Configuration");
 
         properties.setProperty("tkt.footer1", "Change footer text in Configuration");
@@ -390,22 +390,23 @@ public class AppConfig implements AppProperties {
         properties.setProperty("override.pin", "");
 
         // Default database
-        properties.setProperty("db.driverlib", new File(new File(dirname), "derby-10.14.2.0.jar").getAbsolutePath());
-        properties.setProperty("db.engine", "Derby");
-        properties.setProperty("db.driver", "org.apache.derby.jdbc.EmbeddedDriver");
+        properties.setProperty("db.driverlib", new File(new File(dirname), "mariadb-java-client-2.7.0.jar").getAbsolutePath());
+        properties.setProperty("db.engine", "MariaDB");
+        properties.setProperty("db.driver", "org.mariadb.jdbc.Driver");
 
-        properties.setProperty("db.name", "Main DB");
-        properties.setProperty("db.URL", "jdbc:derby:" + System.getProperty("user.home") + "/.unicenta/");
-        properties.setProperty("db.schema", "unicentaopos-database;create=true");
-        properties.setProperty("db.options", "");
-        properties.setProperty("db.user", "");
-        properties.setProperty("db.password", "");
 
-        // secondary DB
-        properties.setProperty("db1.name", "");
-        properties.setProperty("db1.URL", "jdbc:mysql://localhost:3306/");
-        properties.setProperty("db1.schema", "unicentaopos");
-        properties.setProperty("db1.options", "?zeroDateTimeBehavior=convertToNull");
+        properties.setProperty("db.name", "");
+        properties.setProperty("db.URL", "jdbc:mysql://localhost:3306/");
+        properties.setProperty("db.schema", "solipos");
+        properties.setProperty("db.options", "?zeroDateTimeBehavior=convertToNull");
+        properties.setProperty("db.user", "root");
+        properties.setProperty("db.password", "solipos");
+
+        // secondary DB        
+        properties.setProperty("db1.name", "Main DB");
+        properties.setProperty("db1.URL", "jdbc:derby:" + System.getProperty("user.home") + "/.solipos/");
+        properties.setProperty("db1.schema", "solipos-database;create=true");
+        properties.setProperty("db1.options", "");
         properties.setProperty("db1.user", "");
         properties.setProperty("db1.password", "");
 
