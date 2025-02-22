@@ -339,7 +339,7 @@ public abstract class JPanelTicket extends JPanel implements JPanelView, BeanFac
             // adds additonal ticketlines list to display if supported
             if (advDisplay.hasFeature(DeviceDisplayAdvance.TICKETLINES)) {
                 m_ticketlines2 = new JTicketLines(dlSystem.getResourceAsXML("Ticket.Line"));
-		m_ticketlines2.setPreferredSize(new Dimension(900,400));
+                m_ticketlines2.setPreferredSize(new Dimension(900, 400));
                 advDisplay.setTicketLines(m_ticketlines2);
             }
 
@@ -1895,7 +1895,7 @@ public abstract class JPanelTicket extends JPanel implements JPanelView, BeanFac
                                     new ScriptArg("print", paymentdialog.isPrintSelected()));
 
                             printTicket(paymentdialog.isPrintSelected() || warrantyPrint
-                                    ? "Printer.Start"
+                                    ? "Printer.Ticket"
                                     : "Printer.Ticket2", ticket, ticketext);
                             Notify(AppLocal.getIntString("notify.printing"));
 
@@ -1911,6 +1911,8 @@ public abstract class JPanelTicket extends JPanel implements JPanelView, BeanFac
                                 restDB.clearWaiterNameInTable(ticketext.toString());
                                 restDB.clearTicketIdInTable(ticketext.toString());
                             }
+
+                            printTicket("Printer.Start", ticket, ticketext);
                         }
                     }
                 }
