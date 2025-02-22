@@ -1911,8 +1911,6 @@ public abstract class JPanelTicket extends JPanel implements JPanelView, BeanFac
                                 restDB.clearWaiterNameInTable(ticketext.toString());
                                 restDB.clearTicketIdInTable(ticketext.toString());
                             }
-
-                            printTicket("Printer.Start", ticket, ticketext);
                         }
                     }
                 }
