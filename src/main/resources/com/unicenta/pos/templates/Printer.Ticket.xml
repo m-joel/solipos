@@ -22,9 +22,9 @@
 
 <output>
 
-    <display>
-        <line><text align="left" length="8">Total</text><text align="right" length="12">${ticket.printTotal()}</text></line>
-        <line><text align="center" length="20">Thank you</text></line>
+    <display animation="scroll">
+        <line><text align="center" length="20">SOLiPOS MARKET</text></line>
+        <line><text align="center" length="20">Herzlich Willkommen</text></line>
     </display>
 
     <ticket>
