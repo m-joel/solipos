@@ -1,5 +1,5 @@
 //    SOLiPOS is a point of sales application designed for touch screens.
-//    Copyright (C) 2009-2018 uniCenta
+//    Copyright (c) 2009-2018 SOLiPOS
 //    https://solipos.ch
 //
 //    This file is part of SOLiPOS.
