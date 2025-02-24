@@ -1,6 +1,6 @@
 //    SOLiPOS - touch friendly EPoS
 //    Copyright (c) 2009-2015 uniCenta & previous Openbravo POS works
-//    https://unicenta.com
+//    https://solipos.ch
 //
 //    This file is part of SOLiPOS
 //

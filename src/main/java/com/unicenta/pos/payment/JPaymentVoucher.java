@@ -1,6 +1,6 @@
 //    SOLiPOS  - Touch Friendly Point Of Sale
-//    Copyright (c) 2009-2018 uniCenta and part works Openbravo, S.L.
-//    https://unicenta.com
+//    Copyright (c) 2009-2025 SOLiPOS and part works Openbravo, S.L.
+//    https://solipos.ch
 //
 //    This file is part of SOLiPOS
 //

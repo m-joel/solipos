@@ -1,7 +1,7 @@
 #!/bin/sh
 #    SOLiPOS Touch Friendly Point of Sale designed for Touch Screen
 #    Copyright (c) 2009-2017 uniCenta & previous Openbravo POS works
-#    http://sourceforge.net/projects/unicentaopos
+#    https://solipos.ch/application/solipos-desktop
 #
 #    This file is part of SOLiPOS.
 #

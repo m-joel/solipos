@@ -1,6 +1,6 @@
 //    SOLiPOS  - Touch Friendly Point Of Sale
-//    Copyright (c) 2009-2018 uniCenta & previous Openbravo POS works
-//    https://unicenta.com
+//    Copyright (c) 2009-2025 SOLiPOS & previous Openbravo POS works
+//    https://solipos.ch
 //
 //    This file is part of SOLiPOS
 //
@@ -17,8 +17,8 @@
 //    You should have received a copy of the GNU General Public License
 //    along with SOLiPOS.  If not, see <http://www.gnu.org/licenses/>.
 //    SOLiPOS  - Touch Friendly Point Of Sale
-//    Copyright (c) 2009-2018 uniCenta & previous Openbravo POS works
-//    https://unicenta.com
+//    Copyright (c) 2009-2025 SOLiPOS & previous Openbravo POS works
+//    https://solipos.ch
 //
 
 package com.unicenta.pos.sales.restaurant;

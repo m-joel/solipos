@@ -47,7 +47,7 @@ public class HtmlTester
                 + "<h1>Welcome!</h1>\n"
                 + "<h2>This is an H2 header</h2>\n"
                 + "<p>This is some sample text</p>\n"
-                + "<p><a href=\"https://unicenta.com/\">uniCenta site</a></p>\n"
+                + "<p><a href=\"https://solipos.ch/\">uniCenta site</a></p>\n"
                 + "</body>\n";
         
         Document doc = kit.createDefaultDocument();

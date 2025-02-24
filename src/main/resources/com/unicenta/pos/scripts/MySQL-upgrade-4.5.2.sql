@@ -1,6 +1,6 @@
 --    SOLiPOS - Touch Friendly Point Of Sale
 --    Copyright (c) 2009-2018 uniCenta
---    https://unicenta.com
+--    https://solipos.ch
 --
 --    This file is part of SOLiPOS.
 --

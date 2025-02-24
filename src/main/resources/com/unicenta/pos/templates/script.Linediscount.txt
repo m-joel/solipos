@@ -2,7 +2,7 @@
 //
 //    SOLiPOS - Touch Friendly Point Of Sale
 //    Copyright (c) 2009-2018 uniCenta
-//    http://sourceforge.net/projects/unicentaopos
+//    https://solipos.ch/application/solipos-desktop
 //
 //    This file is part of SOLiPOS.
 //

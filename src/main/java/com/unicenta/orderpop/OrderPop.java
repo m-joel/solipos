@@ -1,6 +1,6 @@
 //  SOLiPOS  - Touch Friendly Point Of Sale
 //  Copyright (c) 2017 uniCenta
-//  https://unicenta.com
+//  https://solipos.ch
 //
 //  This file is part of uniCenta Remote Display
 //

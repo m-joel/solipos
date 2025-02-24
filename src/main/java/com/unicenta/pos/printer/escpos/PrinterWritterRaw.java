@@ -1,6 +1,6 @@
 //    SOLiPOS  - Touch Friendly Point Of Sale
-//    Copyright (c) 2009-2018 uniCenta & previous Adrian Romero Corchado.
-//    https://unicenta.com
+//    Copyright (c) 2009-2025 SOLiPOS & previous Adrian Romero Corchado.
+//    https://solipos.ch
 //
 //    This file is part of SOLiPOS
 //

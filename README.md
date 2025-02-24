@@ -17,7 +17,7 @@ It runs on the following operating systems
 * Linux
 * Mac osX
 
-Full details can be found here: https://unicenta.com
+Full details can be found here: https://solipos.ch
 
 ## Before you start
 Install mysql (version 5X supported) and create a schema called unicentaopos

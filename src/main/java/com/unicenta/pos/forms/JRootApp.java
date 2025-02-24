@@ -1,6 +1,6 @@
 //    SOLiPOS  - Touch Friendly Point Of Sale
-//    Copyright (c) 2009-2018 uniCenta & previous Openbravo POS works
-//    https://unicenta.com
+//    Copyright (c) 2009-2018 Solipos & previous Openbravo POS works
+//    https://solipos.ch
 //
 //    This file is part of SOLiPOS
 //
@@ -1068,7 +1068,7 @@ public class JRootApp extends JPanel implements AppView, DeviceMonitorEventListe
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/unicenta/images/unicenta.png"))); // NOI18N
         jLabel1.setText("<html><center>SOLiPOS - Touch Friendly Point of Sale<br>" +
             "Copyright \u00A9 2009-2017 uniCenta <br>" +
-            "https://unicenta.com<br>" +
+            "https://solipos.ch<br>" +
             "<br>" +
             "SOLiPOS is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.<br>" +
             "<br>" +

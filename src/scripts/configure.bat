@@ -1,7 +1,7 @@
 @echo off
 REM    SOLiPOS Touch Friendly Point of Sales designed for Touch Screen
 REM    Copyright (c) 2009-2017 uniCenta & previous Openbravo POS works
-REM    http://sourceforge.net/projects/unicentaopos
+REM    https://solipos.ch/application/solipos-desktop
 REM
 REM    This file is part of SOLiPOS
 REM

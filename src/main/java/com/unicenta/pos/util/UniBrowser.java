@@ -162,10 +162,10 @@ public class UniBrowser extends JFrame {
         SwingUtilities.invokeLater(() -> {
             UniBrowser browser = new UniBrowser();
             browser.setVisible(true);
-//            browser.loadURL("https://unicenta.com/pages/configure-unicenta-opos/");
+//            browser.loadURL("https://solipos.ch/pages/configure-unicenta-opos/");
             String[] s = args;
             System.out.println(s);
-            String strURL ="https://unicenta.com/pages/configure-unicenta-opos/";
+            String strURL ="https://solipos.ch/pages/configure-unicenta-opos/";
             System.out.println("s");
             UniBrowser.toURL(strURL);
         });

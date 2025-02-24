@@ -29,7 +29,7 @@
 //    Portions:
 //    SOLiPOS  - Touch Friendly Point Of Sale
 //    Copyright (c) 2009-2017 uniCenta
-//    https://unicenta.com
+//    https://solipos.ch
 //    author Jack Gerrard
 // This class is a copy of net.sf.jasperreports.engine.print.JRPrinterAWT
 // The modifications are:
